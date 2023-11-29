@@ -32,6 +32,13 @@ This script clones the NVM repository to ~/.nvm and adds the source lines to you
 nvm --version
 ```
 
+**NOTE: if Terminal still says that nvm is not found, it's time to use another command:**
+
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+```
+
 ## Install Node.js v14.21.3
 
 1. With NVM installed, you can install specific versions of Node.js.
